@@ -75,6 +75,14 @@
             color: #666;
         }
     </style>
+    <script>
+        function handleSignIn(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Here you can add your authentication logic
+            // For now, we'll just redirect to the next page
+            window.location.href = 'index-entrepreneur.html'; // Redirect to the next page
+        }
+    </script>
 </head>
 <body>
 
@@ -84,7 +92,7 @@
 
 <div class="container">
     <h2>Welcome Back!</h2>
-    <form action="index-entrepreneur.html" method="POST">
+    <form onsubmit="handleSignIn(event)">
         <label for="username">Username</label>
         <input type="text" id="username" name="username" required>
 
