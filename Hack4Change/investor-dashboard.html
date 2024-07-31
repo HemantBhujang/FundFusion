@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .profile {
+            margin-bottom: 20px;
+        }
+        .profile h3 {
+            margin: 0;
+        }
+        .investment-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .investment-list li {
+            background: #e9ecef;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .sign-out-button {
+            background-color: #dc3545;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+        .sign-out-button:hover {
+            background-color: #c82333;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Investor Dashboard</h1>
+</header>
+
+<div class="container">
+    <div class="profile">
+        <h2>Profile Information</h2>
+        <h3>Name: John Doe</h3>
+        <p>Email: johndoe@example.com</p>
+        <p>Total Investments: $10,000</p>
+        <p>Investments Count: 5</p>
+    </div>
+
+    <h2>Your Investments</h2>
+    <ul class="investment-list">
+        <li>
+            <strong>Project A</strong><br>
+            Amount Invested: $2,000<br>
+            Status: Active
+        </li>
+        <li>
+            <strong>Project B</strong><br>
+            Amount Invested: $3,000<br>
+            Status: Completed
+        </li>
+        <li>
+            <strong>Project C</strong><br>
+            Amount Invested: $1,500<br>
+            Status: Active
+        </li>
+        <li>
+            <strong>Project D</strong><br>
+            Amount Invested: $2,500<br>
+            Status: Active
+        </li>
+        <li>
+            <strong>Project E</strong><br>
+            Amount Invested: $1,000<br>
+            Status: Completed
+        </li>
+    </ul>
+
+    <a href="home.html" class="sign-out-button">Sign Out</a>
+</div>
+
+<footer>
+    <p>&copy; 2024 Investor Dashboard. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

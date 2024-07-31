@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FundFusion Timeline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .post h3 {
+            margin: 0;
+        }
+        .button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FundFusion Timeline</h1>
+    <p>Discover Innovative Ideas from Entrepreneurs</p>
+</header>
+
+<div class="container">
+    <h2>Ideas Posted by Entrepreneurs</h2>
+
+    <!-- Sample Post 1 -->
+    <div class="post">
+        <h3>Innovative Eco-Friendly Packaging</h3>
+        <p><strong>Entrepreneur:</strong> John Doe (User ID: 123)</p>
+        <p>This project aims to develop biodegradable packaging solutions to reduce plastic waste in the environment.</p>
+        <p><strong>Likes:</strong> 10</p>
+        <button class="button" onclick="likePost(123)">Like</button>
+        <button class="button" onclick="window.location.href='Eco-Friendly-post.html'">Connect</button>
+    </div>
+
+    <!-- Sample Post 2 -->
+    <div class="post">
+        <h3>Smart Home Energy Management System</h3>
+        <p><strong>Entrepreneur:</strong> Jane Smith (User ID: 124)</p>
+        <p>This system uses AI to optimize energy consumption in homes, reducing costs and environmental impact.</p>
+        <p><strong>Likes:</strong> 15</p>
+        <button class="button" onclick="likePost(124)">Like</button>
+        <button class="button" onclick="connect(124)">Connect</button>
+    </div>
+
+    <!-- Sample Post 3 -->
+    <div class="post">
+        <h3>Mobile App for Mental Health Support</h3>
+        <p><strong>Entrepreneur:</strong> Emily Johnson (User ID: 125)</p>
+        <p>An app designed to provide mental health resources and support through community engagement and professional help.</p>
+        <p><strong>Likes:</strong> 20</p>
+        <button class="button" onclick="likePost(125)">Like</button>
+        <button class="button" onclick="connect(125)">Connect</button>
+    </div>
+
+    <!-- Sample Post 4 -->
+    <div class="post">
+        <h3>Blockchain-Based Voting System</h3>
+        <p><strong>Entrepreneur:</strong> Michael Brown (User ID: 126)</p>
+        <p>This project aims to create a secure and transparent voting system using blockchain technology to enhance democracy.</p>
+        <p><strong>Likes:</strong> 8</p>
+        <button class="button" onclick="likePost(126)">Like</button>
+        <button class="button" onclick="connect(126)">Connect</button>
+    </div>
+
+    <!-- Sample Post 5 -->
+    <div class="post">
+        <h3>AI-Powered Personal Finance Advisor</h3>
+        <p><strong>Entrepreneur:</strong> Sarah Wilson (User ID: 127)</p>
+        <p>This service uses AI to help users manage their finances, offering personalized advice and budgeting tools.</p>
+        <p><strong>Likes:</strong> 12</p>
+        <button class="button" onclick="likePost(127)">Like</button>
+        <button class="button" onclick="connect(127)">Connect</button>
+    </div>
+
+    <!-- Additional posts can be added here in the same format -->
+</div>
+
+<footer>
+    <p>&copy; 2024 FundFusion. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

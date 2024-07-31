@@ -1,0 +1,181 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FundFusion - Connecting Investors and Entrepreneurs</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              background-color: #f4f4f4;
+          }
+          header {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color: #007BFF;
+              color: white;
+              padding: 20px;
+          }
+          .logo {
+              font-size: 24px;
+              font-weight: bold;
+          }
+          nav {
+              background-color: #0056b3;
+              padding: 10px;
+          }
+          nav a {
+              color: white;
+              text-decoration: none;
+              margin: 0 15px;
+          }
+          nav a:hover {
+              text-decoration: underline;
+          }
+          .container {
+              max-width: 1000px;
+              margin: auto;
+              padding: 20px;
+              background: white;
+              border-radius: 5px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          h1, h2 {
+              color: #333;
+          }
+          .section {
+              margin-bottom: 20px;
+          }
+
+          .search-bar {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .suggestions {
+            list-style-type: none;
+            padding: 0;
+            margin: 5px 0 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 300px;
+            position: absolute;
+            background: white;
+            z-index: 1;
+        }
+        .suggestions li {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .suggestions li:hover {
+            background-color: #e9ecef;
+        }
+          footer {
+              text-align: center;
+              margin-top: 20px;
+              font-size: 0.9em;
+              color: #666;
+              padding: 10px;
+              background-color: #007BFF;
+              color: white;
+          }
+          .button {
+              background-color: #28a745;
+              color: white;
+              padding: 10px 15px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              text-align: center;
+              display: inline-block;
+              text-decoration: none;
+          }
+          .button:hover {
+              background-color: #218838;
+          }
+          .toggle-button {
+              background-color: #ffc107;
+          }
+          .image-gallery {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+          }
+          .image-gallery img {
+              width: 48%;
+              margin-bottom: 20px;
+              border-radius: 5px;
+          }
+      </style>
+      <script>
+          function toggleMessaging() {
+              const messagingSection = document.getElementById('messaging');
+              messagingSection.style.display = messagingSection.style.display === 'none' ? 'block' : 'none';
+          }
+      </script>
+  </head>
+  <body>
+  
+  <header>
+      <div class="logo">FundFusion</div>
+      <nav>
+          <a href="Home.html">Home</a>
+          <a href="timeline.html">Timeline</a>
+          <a href="Message-list-Investor.html">Message</a>
+          <a href="#contact">Contact Us</a>
+          <a href="investor-dashboard.html" class="button">Profile</a>
+      </nav>
+  </header>
+
+  <div class="container">
+    <div class="search-bar">
+        <input type="text" placeholder="Search..." onfocus="showSuggestions()" onblur="hideSuggestions()">
+        <ul id="suggestions" class="suggestions" style="display: none;">
+            <li>Entrepreneurs</li>
+            <li>Investors</li>
+            <li>Projects</li>
+            <li>Crowdfunding</li>
+            <li>Funding Opportunities</li>
+        </ul>
+    </div>
+  
+  <div class="container">
+      <div id="about" class="section">
+          <h2>About Us</h2>
+          <p>FundFusion is a platform designed to connect investors with innovative entrepreneurs through crowdfunding campaigns. Explore unique projects and contribute to their success.</p>
+      </div>
+
+      <div class="image-gallery">
+          <img src="https://via.placeholder.com/400x300" alt="Project Image 1">
+          <img src="https://via.placeholder.com/400x300" alt="Project Image 2">
+          <img src="https://via.placeholder.com/400x300" alt="Entrepreneur Image 1">
+          <img src="https://via.placeholder.com/400x300" alt="Entrepreneur Image 2">
+      </div>
+          
+      <div id="messaging" style="display: none; margin-top: 20px;">
+          <h3>Messaging with Entrepreneurs</h3>
+          <p>Here you can communicate with entrepreneurs regarding their projects.</p>
+          <!-- Add messaging functionality here -->
+      </div>
+      
+      <div id="contact" class="section">
+          <h2>Contact Us</h2>
+          <p>If you have any questions, feel free to reach out to us at <a href="mailto:info@fundfusion.com">info@fundfusion.com</a>.</p>
+      </div>
+  </div>
+  
+  <footer>
+      <p>&copy; 2024 FundFusion. All Rights Reserved.</p>
+  </footer>
+  
+  </body>
+  </html>

@@ -1,0 +1,113 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FundFusion - Entrepreneur Messaging</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 20px;
+              background-color: #f4f4f4;
+          }
+          header {
+              background-color: #007BFF;
+              color: white;
+              padding: 20px;
+              text-align: center;
+          }
+          .container {
+              max-width: 800px;
+              margin: auto;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          h2 {
+              color: #333;
+          }
+          .message {
+              border: 1px solid #ddd;
+              border-radius: 5px;
+              padding: 10px;
+              margin-bottom: 10px;
+          }
+          .message p {
+              margin: 0;
+          }
+          .message.sent {
+              background-color: #e7f3fe;
+          }
+          .message.received {
+              background-color: #f1f1f1;
+          }
+          .input-area {
+              display: flex;
+              margin-top: 20px;
+          }
+          .input-area input {
+              flex: 1;
+              padding: 10px;
+              border: 1px solid #ddd;
+              border-radius: 5px;
+          }
+          .input-area button {
+              padding: 10px 15px;
+              background-color: #28a745;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              margin-left: 10px;
+          }
+          .input-area button:hover {
+              background-color: #218838;
+          }
+      </style>
+  </head>
+  <body>
+  
+  <header>
+      <h1>FundFusion Messaging</h1>
+      <p>Communicate with Investors</p>
+  </header>
+  
+  <div class="container">
+      <h2>Messages</h2>
+      
+      <div class="message received">
+          <p><strong>Investor:</strong> Hi! I’m interested in your project. Can you provide more details?</p>
+      </div>
+      <div class="message sent">
+          <p><strong>You:</strong> Absolutely! My project focuses on renewable energy solutions.</p>
+      </div>
+      <div class="message received">
+          <p><strong>Investor:</strong> That sounds promising! What stage are you currently at?</p>
+      </div>
+      
+      <div class="input-area">
+          <input type="text" id="messageInput" placeholder="Type your message here..." />
+          <button onclick="sendMessage()">Send</button>
+      </div>
+  </div>
+  
+  <script>
+      function sendMessage() {
+          const input = document.getElementById('messageInput');
+          const messageText = input.value;
+          
+          if (messageText.trim() !== "") {
+              const messageContainer = document.createElement('div');
+              messageContainer.className = 'message sent';
+              messageContainer.innerHTML = `<p><strong>You:</strong> ${messageText}</p>`;
+              document.querySelector('.container').appendChild(messageContainer);
+              input.value = ""; // Clear input field
+          }
+      }
+  </script>
+  
+  </body>
+  </html>
